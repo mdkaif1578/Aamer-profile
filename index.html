@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Marriage Profile | Muhammad Aamer</title>
+<title>Muhammad Aamer | Personal Profile</title>
 
-<meta name="description" content="Personal marriage profile of Muhammad Aamer">
+<meta name="description"
+content="Personal profile of Muhammad Aamer Muhammad Hanif.">
+
 <meta name="robots" content="noindex, nofollow">
 
 <style>
+
+/* =========================
+   BASIC
+========================= */
 
 *{
     margin:0;
@@ -19,355 +27,515 @@
 }
 
 body{
-    font-family:Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background:#f3f7f5;
     color:#263832;
-    line-height:1.6;
+    line-height:1.7;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header{
-    background:linear-gradient(135deg,#0f5c4d,#21806b);
+    background:linear-gradient(135deg,#075e54,#087f5b);
     color:white;
-    padding:25px 7%;
-    text-align:center;
-}
-
-header h1{
-    font-size:32px;
-    letter-spacing:.5px;
-}
-
-header p{
-    opacity:.9;
-    margin-top:4px;
-    font-size:16px;
-}
-
-/* NAVIGATION */
-
-nav{
+    padding:20px 7%;
     position:sticky;
     top:0;
     z-index:1000;
-    background:#ffffff;
-    padding:13px 5%;
+    box-shadow:0 4px 18px rgba(0,0,0,0.15);
+}
+
+.header-inner{
+    max-width:1200px;
+    margin:auto;
     display:flex;
-    justify-content:center;
-    gap:10px;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:23px;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+.logo span{
+    display:block;
+    font-size:12px;
+    font-weight:normal;
+    opacity:0.85;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+    display:flex;
+    gap:8px;
     flex-wrap:wrap;
-    box-shadow:0 3px 15px rgba(0,0,0,.08);
+    justify-content:center;
 }
 
 nav a{
     text-decoration:none;
-    color:#176b5b;
-    background:#edf6f2;
-    padding:9px 17px;
-    border-radius:25px;
+    color:#075e54;
+    background:#ffffff;
+    padding:8px 14px;
+    border-radius:30px;
     font-size:14px;
     font-weight:bold;
-    transition:.3s;
+    border:2px solid transparent;
+    transition:0.3s ease;
 }
 
 nav a:hover{
-    background:#176b5b;
-    color:white;
+    background:#dff5eb;
+    border-color:#ffffff;
     transform:translateY(-2px);
+    box-shadow:0 5px 12px rgba(0,0,0,0.18);
 }
 
-/* HERO */
+nav a:active{
+    transform:scale(0.96);
+}
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
-    max-width:1100px;
-    margin:32px auto;
-    padding:38px;
-    background:#ffffff;
-    border-radius:28px;
+    max-width:1200px;
+    margin:45px auto;
+    padding:45px 7%;
     display:flex;
     align-items:center;
-    gap:50px;
-    box-shadow:0 10px 35px rgba(28,72,60,.10);
-    border:1px solid #e3eee9;
+    justify-content:center;
+    gap:60px;
+    background:linear-gradient(135deg,#ffffff,#eef8f3);
+    border-radius:30px;
+    box-shadow:0 12px 35px rgba(0,0,0,0.08);
+    border:1px solid #dcece5;
 }
 
-/* PROFILE PHOTO */
+.hero-text{
+    flex:1;
+}
+
+.hero-text .small-title{
+    color:#087f5b;
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:8px;
+}
+
+.hero-text h1{
+    font-size:42px;
+    color:#075e54;
+    margin-bottom:10px;
+}
+
+.hero-text h2{
+    font-size:20px;
+    color:#5c7068;
+    font-weight:normal;
+    margin-bottom:18px;
+}
+
+.hero-text p{
+    color:#52645e;
+    max-width:600px;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:22px;
+    padding:12px 22px;
+    background:#087f5b;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.hero-btn:hover{
+    background:#075e54;
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   PROFILE PHOTO
+========================= */
+
+.profile-link{
+    display:block;
+    text-decoration:none;
+}
 
 .pprofile-photo{
     width:270px;
     height:350px;
-    object-fit:cover;
+    object-fit:contain;
     object-position:center;
+    background:#ffffff;
     border-radius:24px;
-    border:7px solid #edf6f2;
-    box-shadow:0 12px 30px rgba(0,0,0,.15);
-    display:block;
-    flex-shrink:0;
+    border:7px solid #e7f4ee;
+    box-shadow:0 12px 30px rgba(0,0,0,0.16);
+    cursor:pointer;
+    transition:0.3s ease;
 }
 
-.hero-content{
-    flex:1;
+.pprofile-photo:hover{
+    transform:scale(1.02);
+    box-shadow:0 16px 35px rgba(0,0,0,0.20);
 }
 
-.hero-content .small-title{
-    color:#18806b;
-    font-weight:bold;
-    font-size:18px;
-    margin-bottom:8px;
-}
-
-.hero-content h2{
-    color:#213c35;
-    font-size:40px;
-    line-height:1.2;
-    margin-bottom:15px;
-}
-
-.hero-content p{
-    color:#61716c;
-    font-size:17px;
-    margin-bottom:24px;
-    max-width:600px;
-}
-
-.btn{
-    display:inline-block;
-    text-decoration:none;
-    background:#176b5b;
-    color:white;
-    padding:13px 25px;
-    border-radius:28px;
-    font-weight:bold;
-    transition:.3s;
-    box-shadow:0 6px 15px rgba(23,107,91,.20);
-}
-
-.btn:hover{
-    background:#0f584b;
-    transform:translateY(-2px);
-}
-
-/* CONTAINER */
-
-.container{
-    max-width:1050px;
-    margin:auto;
-    padding:10px 20px;
-}
+/* =========================
+   SECTIONS
+========================= */
 
 section{
-    margin:30px 0;
-    scroll-margin-top:85px;
+    max-width:1100px;
+    margin:35px auto;
+    padding:38px 7%;
+    background:#ffffff;
+    border-radius:24px;
+    border:1px solid #dfebe6;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
 }
 
 .section-title{
+    color:#075e54;
     font-size:28px;
-    margin-bottom:15px;
-    color:#176b5b;
+    margin-bottom:22px;
+    border-left:5px solid #087f5b;
+    padding-left:12px;
 }
 
-/* CARDS */
-
-.card{
-    background:#ffffff;
-    padding:27px;
-    border-radius:20px;
-    box-shadow:0 7px 25px rgba(28,72,60,.08);
-    border:1px solid #e3eee9;
-    color:#354740;
+.section-title span{
+    margin-right:7px;
 }
 
-.card p{
-    font-size:16px;
-}
-
-/* INFORMATION */
+/* =========================
+   INFO GRID
+========================= */
 
 .info-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:14px;
+    gap:16px;
 }
 
-.info-item{
-    background:#f4f8f6;
-    padding:16px;
-    border-radius:14px;
-    border:1px solid #e2eee9;
-    color:#34453f;
+.info-card{
+    background:#f4faf7;
+    padding:18px;
+    border-radius:16px;
+    border:1px solid #dcece5;
+    transition:0.3s;
 }
 
-.info-item strong{
+.info-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.08);
+}
+
+.info-card strong{
     display:block;
-    color:#176b5b;
+    color:#087f5b;
     margin-bottom:4px;
-    font-size:14px;
 }
 
-/* GALLERY */
+/* =========================
+   ABOUT
+========================= */
+
+.about-box{
+    background:#f4faf7;
+    padding:22px;
+    border-radius:18px;
+    border-left:5px solid #087f5b;
+}
+
+.about-box p{
+    margin-bottom:12px;
+}
+
+/* =========================
+   FAMILY
+========================= */
+
+.family-list{
+    list-style:none;
+}
+
+.family-list li{
+    padding:13px 0;
+    border-bottom:1px solid #e4eee9;
+}
+
+.family-list li:last-child{
+    border-bottom:none;
+}
+
+/* =========================
+   HOBBIES
+========================= */
+
+.hobby-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.hobby-card{
+    background:#f4faf7;
+    padding:22px;
+    text-align:center;
+    border-radius:18px;
+    border:1px solid #dcece5;
+    transition:0.3s;
+}
+
+.hobby-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.hobby-icon{
+    font-size:35px;
+    margin-bottom:8px;
+}
+
+/* =========================
+   GALLERY
+========================= */
 
 .gallery{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:16px;
+    gap:18px;
+}
+
+.gallery a{
+    display:block;
+    overflow:hidden;
+    border-radius:18px;
+    background:#f4faf7;
+    border:1px solid #dcece5;
 }
 
 .gallery img{
     width:100%;
-    height:280px;
+    height:260px;
     object-fit:cover;
-    border-radius:18px;
-    transition:.3s;
-    box-shadow:0 6px 18px rgba(0,0,0,.10);
-    border:4px solid #f1f6f4;
+    display:block;
+    cursor:pointer;
+    transition:0.35s ease;
 }
 
 .gallery img:hover{
-    transform:scale(1.025);
+    transform:scale(1.05);
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
+
+.contact-intro{
+    text-align:center;
+    margin-bottom:25px;
+    color:#5b6d66;
+}
 
 .contact-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:15px;
+    gap:18px;
 }
 
-.contact-box{
-    background:#f4f8f6;
-    padding:21px;
-    border-radius:16px;
-    border:1px solid #e2eee9;
-}
-
-.contact-box strong{
-    display:block;
-    color:#176b5b;
-    margin-bottom:6px;
-    font-size:16px;
-}
-
-.contact-box a{
-    color:#30413b;
+.contact-card{
     text-decoration:none;
+    color:#263832;
+    background:linear-gradient(135deg,#f7fcf9,#eaf7f1);
+    padding:25px 18px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid #d7ebe2;
+    transition:0.3s ease;
+}
+
+.contact-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.10);
+    border-color:#087f5b;
+}
+
+.contact-icon{
+    font-size:36px;
+    margin-bottom:8px;
+}
+
+.contact-card h3{
+    color:#075e54;
+    margin-bottom:5px;
+}
+
+.contact-card p{
+    font-size:14px;
     word-break:break-word;
 }
 
-.contact-box a:hover{
-    color:#176b5b;
+.whatsapp{
+    margin-top:22px;
+    text-align:center;
 }
 
-/* FOOTER */
+.whatsapp a{
+    display:inline-block;
+    text-decoration:none;
+    background:#25D366;
+    color:white;
+    padding:12px 24px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.whatsapp a:hover{
+    transform:translateY(-2px);
+    box-shadow:0 7px 18px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-    margin-top:40px;
-    background:#0f4f43;
-    color:white;
+    margin-top:50px;
+    padding:25px;
     text-align:center;
-    padding:24px;
-    font-size:14px;
+    background:#075e54;
+    color:white;
 }
 
-/* MOBILE */
+footer p{
+    font-size:13px;
+    opacity:0.9;
+}
 
-@media(max-width:750px){
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:800px){
 
     header{
-        padding:22px 15px;
+        padding:15px 4%;
     }
 
-    header h1{
-        font-size:27px;
+    .header-inner{
+        flex-direction:column;
     }
 
-    header p{
-        font-size:15px;
+    .logo{
+        text-align:center;
     }
 
     nav{
-        gap:7px;
-        padding:11px 8px;
+        gap:6px;
     }
 
     nav a{
-        padding:8px 13px;
-        font-size:13px;
+        padding:7px 11px;
+        font-size:12px;
     }
 
     .hero{
-        margin:20px 15px;
-        padding:24px 20px;
-        flex-direction:column;
-        text-align:center;
+        margin:25px 15px;
+        padding:30px 20px;
+        flex-direction:column-reverse;
         gap:25px;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:30px;
+    }
+
+    .hero-text h2{
+        font-size:17px;
     }
 
     .pprofile-photo{
         width:220px;
         height:290px;
-        border-radius:22px;
-    }
-
-    .hero-content h2{
-        font-size:30px;
-    }
-
-    .hero-content p{
-        font-size:16px;
-    }
-
-    .small-title{
-        font-size:17px;
-    }
-
-    .container{
-        padding:5px 15px;
     }
 
     section{
-        margin:25px 0;
+        margin:25px 15px;
+        padding:28px 20px;
     }
 
     .section-title{
-        font-size:25px;
+        font-size:24px;
     }
 
-    .card{
-        padding:21px;
-    }
-
-    .info-grid{
+    .info-grid,
+    .hobby-grid,
+    .contact-grid{
         grid-template-columns:1fr;
     }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .gallery img{
+        height:210px;
+    }
+}
+
+@media(max-width:450px){
 
     .gallery{
         grid-template-columns:1fr;
     }
 
     .gallery img{
-        height:340px;
+        height:300px;
     }
 
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    footer{
-        padding:22px 15px;
+    .pprofile-photo{
+        width:210px;
+        height:280px;
     }
 }
 
 </style>
+
 </head>
 
 <body>
 
+
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
-    <h1>Marriage Profile</h1>
-    <p>Personal Profile</p>
-</header>
+
+<div class="header-inner">
+
+<div class="logo">
+    Muhammad Aamer
+    <span>Personal Profile</span>
+</div>
 
 <nav>
     <a href="#home">Home</a>
@@ -380,278 +548,393 @@ footer{
     <a href="#contact">Contact</a>
 </nav>
 
-<!-- HOME -->
+</div>
 
-<section id="home">
+</header>
 
-    <div class="hero">
 
-        <img src="images/pprofile.jpeg"
-             alt="Muhammad Aamer"
-             class="pprofile-photo">
+<!-- =========================
+     HOME
+========================= -->
 
-        <div class="hero-content">
+<div class="hero" id="home">
 
-            <div class="small-title">
-                Welcome to My Profile
-            </div>
+<div class="hero-text">
 
-            <h2>
-                Muhammad Aamer
-            </h2>
+<div class="small-title">
+    ✨ Welcome to My Profile
+</div>
 
-            <p>
-                A responsible, family-oriented and ambitious person
-                with a balanced and active lifestyle.
-            </p>
+<h1>
+    Muhammad Aamer
+</h1>
 
-            <a href="#about" class="btn">
-                Explore My Profile
-            </a>
+<h2>
+    Muhammad Aamer Muhammad Hanif
+</h2>
 
-        </div>
+<p>
+    I am a responsible and caring person who values my family,
+    personal growth and a balanced way of living.
+</p>
 
-    </div>
-
-</section>
-
-<div class="container">
-
-<!-- ABOUT -->
-
-<section id="about">
-
-    <h2 class="section-title">
-        About Me
-    </h2>
-
-    <div class="card">
-
-        <p>
-            I am a responsible and caring person who values my family
-            and takes my responsibilities seriously.
-        </p>
-
-        <br>
-
-        <div class="info-grid">
-
-            <div class="info-item">
-                <strong>Full Name</strong>
-                Muhammad Aamer Muhammad Hanif
-            </div>
-
-            <div class="info-item">
-                <strong>Father's Name</strong>
-                Muhammad Hanif
-            </div>
-
-            <div class="info-item">
-                <strong>Grandfather's Name</strong>
-                Nabisab Shaikh
-            </div>
-
-            <div class="info-item">
-                <strong>Current City</strong>
-                Nanded, Maharashtra
-            </div>
-
-            <div class="info-item">
-                <strong>Height</strong>
-                5'5"
-            </div>
-
-            <div class="info-item">
-                <strong>Community / Biradari</strong>
-                Bagban
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- EDUCATION -->
-
-<section id="education">
-
-    <h2 class="section-title">
-        Education
-    </h2>
-
-    <div class="card">
-
-        <p>
-            I completed my B.Tech, which provided me with a strong
-            technical and professional foundation.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- CAREER -->
-
-<section id="career">
-
-    <h2 class="section-title">
-        Career
-    </h2>
-
-    <div class="card">
-
-        <p>
-            After completing my B.Tech, I gained professional experience
-            in the Food Technology field. I later transitioned into
-            entrepreneurship and currently manage my own business.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- FAMILY -->
-
-<section id="family">
-
-    <h2 class="section-title">
-        Family
-    </h2>
-
-    <div class="card">
-
-        <p>
-            I come from a close-knit family of five brothers, and I am
-            the eldest. My father takes care of our agricultural land,
-            while my mother is a homemaker. Our family also owns
-            agricultural land and property.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- HOBBIES -->
-
-<section id="hobbies">
-
-    <h2 class="section-title">
-        Hobbies & Lifestyle
-    </h2>
-
-    <div class="card">
-
-        <p>
-            I enjoy playing cricket and maintain an active and healthy
-            lifestyle. I value a balanced and disciplined way of living.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- RELIGION -->
-
-<section>
-
-    <h2 class="section-title">
-        Religion
-    </h2>
-
-    <div class="card">
-
-        <p>
-            I belong to the Muslim faith and follow the beliefs of
-            Ahle Sunnat Wal Jamaat.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- PHOTOS -->
-
-<section id="photos">
-
-    <h2 class="section-title">
-        Photos
-    </h2>
-
-    <div class="card">
-
-        <div class="gallery">
-
-            <img src="images/photo1.jpeg" alt="Photo 1">
-
-            <img src="images/photo2.jpeg" alt="Photo 2">
-
-            <img src="images/photo3.jpeg" alt="Photo 3">
-
-            <img src="images/photo4.jpeg" alt="Photo 4">
-
-            <img src="images/profile.jpeg" alt="Photo 5">
-
-            <img src="images/photo6.jpeg" alt="Photo 6">
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-    <h2 class="section-title">
-        Contact
-    </h2>
-
-    <div class="card">
-
-        <div class="contact-grid">
-
-            <div class="contact-box">
-
-                <strong>Phone</strong>
-
-                <a href="tel:9673241200">
-                    9673241200
-                </a>
-
-            </div>
-
-            <div class="contact-box">
-
-                <strong>Email</strong>
-
-                <a href="mailto:aamerbagban78@gmail.com">
-                    aamerbagban78@gmail.com
-                </a>
-
-            </div>
-
-            <div class="contact-box">
-
-                <strong>Location</strong>
-
-                Maltekdi Road, Degloor Naka,
-                Nanded, Maharashtra
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+<a href="#about" class="hero-btn">
+    View My Profile →
+</a>
 
 </div>
 
+
+<a href="images/pprofile.jpeg"
+   target="_blank"
+   class="profile-link">
+
+<img src="images/pprofile.jpeg"
+     alt="Muhammad Aamer"
+     class="pprofile-photo">
+
+</a>
+
+</div>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+<h2 class="section-title">
+    <span>👤</span> About Me
+</h2>
+
+<div class="about-box">
+
+<p>
+    I am a responsible and caring person who values my family
+    and takes my responsibilities seriously.
+</p>
+
+<p>
+    I maintain a fit and healthy lifestyle and value a balanced
+    and disciplined way of living.
+</p>
+
+<p>
+    I belong to the Muslim faith and follow the beliefs of
+    Ahle Sunnat Wal Jamaat.
+</p>
+
+</div>
+
+
+<div class="info-grid" style="margin-top:20px;">
+
+<div class="info-card">
+<strong>👨 Full Name</strong>
+Muhammad Aamer Muhammad Hanif
+</div>
+
+<div class="info-card">
+<strong>👨‍👦 Father</strong>
+Muhammad Hanif
+</div>
+
+<div class="info-card">
+<strong>👴 Grandfather</strong>
+Nabisab Shaikh
+</div>
+
+<div class="info-card">
+<strong>📍 Current City</strong>
+Nanded, Maharashtra
+</div>
+
+<div class="info-card">
+<strong>📏 Height</strong>
+5'5"
+</div>
+
+<div class="info-card">
+<strong>🤝 Community</strong>
+Bagban
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     EDUCATION
+========================= -->
+
+<section id="education">
+
+<h2 class="section-title">
+    <span>🎓</span> Education
+</h2>
+
+<div class="about-box">
+
+<p>
+    I completed my <strong>B.Tech</strong>, which provided me
+    with a strong technical and professional foundation.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CAREER
+========================= -->
+
+<section id="career">
+
+<h2 class="section-title">
+    <span>💼</span> Career
+</h2>
+
+<div class="about-box">
+
+<p>
+    After completing my B.Tech, I gained professional experience
+    in the Food Technology field.
+</p>
+
+<p>
+    I later transitioned into entrepreneurship and currently
+    manage my own business.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FAMILY
+========================= -->
+
+<section id="family">
+
+<h2 class="section-title">
+    <span>👨‍👩‍👦</span> Family
+</h2>
+
+<ul class="family-list">
+
+<li>
+    👨‍👦‍👦 I come from a close-knit family of five brothers,
+    and I am the eldest.
+</li>
+
+<li>
+    🌾 My father takes care of our agricultural land.
+</li>
+
+<li>
+    🏡 My mother is a homemaker.
+</li>
+
+<li>
+    🌱 Our family also owns agricultural land and property.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- =========================
+     HOBBIES
+========================= -->
+
+<section id="hobbies">
+
+<h2 class="section-title">
+    <span>❤️</span> Hobbies & Lifestyle
+</h2>
+
+<div class="hobby-grid">
+
+<div class="hobby-card">
+
+<div class="hobby-icon">
+    🏏
+</div>
+
+<h3>Cricket</h3>
+
+<p>
+    I enjoy playing cricket and spending time
+    in an active environment.
+</p>
+
+</div>
+
+
+<div class="hobby-card">
+
+<div class="hobby-icon">
+    💪
+</div>
+
+<h3>Fitness</h3>
+
+<p>
+    I maintain a fit and healthy lifestyle and
+    value disciplined living.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PHOTOS
+========================= -->
+
+<section id="photos">
+
+<h2 class="section-title">
+    <span>📸</span> Photos
+</h2>
+
+<div class="gallery">
+
+<a href="images/photo1.jpeg" target="_blank">
+    <img src="images/photo1.jpeg" alt="Photo 1">
+</a>
+
+<a href="images/photo2.jpeg" target="_blank">
+    <img src="images/photo2.jpeg" alt="Photo 2">
+</a>
+
+<a href="images/photo3.jpeg" target="_blank">
+    <img src="images/photo3.jpeg" alt="Photo 3">
+</a>
+
+<a href="images/photo4.jpeg" target="_blank">
+    <img src="images/photo4.jpeg" alt="Photo 4">
+</a>
+
+<a href="images/profile.jpeg" target="_blank">
+    <img src="images/profile.jpeg" alt="Profile Photo">
+</a>
+
+<a href="images/photo6.jpeg" target="_blank">
+    <img src="images/photo6.jpeg" alt="Photo 6">
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
+
+<h2 class="section-title">
+    <span>📞</span> Contact Me
+</h2>
+
+<p class="contact-intro">
+    Feel free to get in touch with me.
+</p>
+
+
+<div class="contact-grid">
+
+
+<a href="tel:9673241200" class="contact-card">
+
+<div class="contact-icon">
+    📞
+</div>
+
+<h3>Phone</h3>
+
+<p>
+    9673241200
+</p>
+
+</a>
+
+
+<a href="mailto:aamerbagban78@gmail.com"
+   class="contact-card">
+
+<div class="contact-icon">
+    ✉️
+</div>
+
+<h3>Email</h3>
+
+<p>
+    aamerbagban78@gmail.com
+</p>
+
+</a>
+
+
+<div class="contact-card">
+
+<div class="contact-icon">
+    📍
+</div>
+
+<h3>Location</h3>
+
+<p>
+    Maltekdi Road, Degloor Naka, Nanded,
+    Maharashtra
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="whatsapp">
+
+<a href="https://wa.me/919673241200"
+   target="_blank">
+
+    💬 Chat on WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
-    Marriage Profile · Muhammad Aamer Muhammad Hanif
+
+<p>
+    © 2026 Muhammad Aamer · Personal Profile
+</p>
+
+<p>
+    Made with ❤️
+</p>
+
 </footer>
+
 
 </body>
 </html>
