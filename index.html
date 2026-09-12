@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="robots" content="noindex, nofollow">
+<title>Marriage Profile | Muhammad Aamer </title>
 
-<title>Muhammad Aamer | Marriage Profile</title>
+<meta name="description" content="Personal marriage profile of Muhammad Aamer ">
+<meta name="robots" content="noindex, nofollow">
 
 <style>
 *{
@@ -17,299 +18,243 @@
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    color:#263238;
-    background:#f3f7f6;
+    font-family:Arial, sans-serif;
+    background:#f4f7f6;
+    color:#24332f;
     line-height:1.6;
 }
 
-/* TOP BAR */
-.topbar{
-    background:#174c4c;
+header{
+    background:linear-gradient(135deg,#123d35,#176b5b);
     color:white;
-    padding:14px 25px;
+    padding:22px 7%;
     text-align:center;
-    font-size:20px;
-    font-weight:bold;
-    letter-spacing:1px;
 }
 
-/* NAVIGATION */
-.nav{
-    background:white;
-    padding:13px 15px;
-    display:flex;
-    justify-content:center;
-    gap:9px;
-    flex-wrap:wrap;
-    box-shadow:0 3px 15px rgba(0,0,0,.08);
+header h1{
+    font-size:30px;
+    letter-spacing:.5px;
+}
+
+header p{
+    opacity:.85;
+    margin-top:4px;
+}
+
+nav{
     position:sticky;
     top:0;
     z-index:1000;
+    background:white;
+    padding:12px 5%;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
-.nav a{
+nav a{
     text-decoration:none;
-    color:#174c4c;
-    background:#edf5f3;
-    padding:8px 15px;
-    border-radius:22px;
+    color:#176b5b;
+    background:#eef6f3;
+    padding:9px 16px;
+    border-radius:25px;
     font-size:14px;
-    font-weight:600;
+    font-weight:bold;
     transition:.3s;
 }
 
-.nav a:hover{
-    background:#174c4c;
+nav a:hover{
+    background:#176b5b;
     color:white;
-    transform:translateY(-2px);
 }
 
-/* HERO */
 .hero{
-    max-width:1050px;
-    margin:25px auto 15px;
+    max-width:1100px;
+    margin:35px auto;
     padding:35px;
-    background:linear-gradient(135deg,#e6f3ef,#ffffff);
-    border-radius:25px;
-    box-shadow:0 10px 35px rgba(0,0,0,.08);
-}
-
-.hero-content{
+    background:white;
+    border-radius:24px;
     display:flex;
     align-items:center;
     gap:45px;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
 }
 
-.hero-photo{
-    width:250px;
-    height:290px;
-    border-radius:22px;
-    background:#dce9e5;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#6b7d78;
-    font-weight:600;
-    flex-shrink:0;
-    overflow:hidden;
-    box-shadow:0 8px 25px rgba(0,0,0,.12);
-}
-
-.hero-photo img{
-    width:100%;
-    height:100%;
+.profile-photo{
+    width:280px;
+    height:340px;
     object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
 }
 
-.hero-text{
+.hero-content{
     flex:1;
 }
 
-.welcome{
-    font-size:18px;
-    color:#b07a35;
+.hero-content .small-title{
+    color:#176b5b;
     font-weight:bold;
     margin-bottom:8px;
 }
 
-.hero h1{
-    font-size:39px;
-    color:#174c4c;
+.hero-content h2{
+    font-size:38px;
     line-height:1.2;
-    margin-bottom:12px;
+    margin-bottom:15px;
 }
 
-.hero-description{
-    color:#65716e;
-    font-size:16px;
+.hero-content p{
+    color:#66736f;
     margin-bottom:22px;
 }
 
-.explore{
+.btn{
     display:inline-block;
     text-decoration:none;
-    background:#174c4c;
+    background:#176b5b;
     color:white;
-    padding:12px 24px;
+    padding:12px 22px;
     border-radius:25px;
     font-weight:bold;
-    transition:.3s;
 }
 
-.explore:hover{
-    background:#246b68;
-    transform:translateY(-2px);
-}
-
-/* SECTIONS */
-section{
+.container{
     max-width:1050px;
-    margin:0 auto;
-    padding:35px 25px;
+    margin:auto;
+    padding:15px 20px;
+}
+
+section{
+    margin:25px 0;
+    scroll-margin-top:80px;
 }
 
 .section-title{
-    text-align:center;
-    margin-bottom:22px;
-}
-
-.section-title h2{
-    color:#174c4c;
-    font-size:29px;
-    margin-bottom:3px;
-}
-
-.section-title span{
-    color:#8a9693;
-    font-size:13px;
+    font-size:26px;
+    margin-bottom:15px;
+    color:#176b5b;
 }
 
 .card{
     background:white;
     padding:25px;
-    border-radius:17px;
-    box-shadow:0 6px 22px rgba(0,0,0,.06);
-    margin-bottom:16px;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
 }
 
-.card h3{
-    color:#174c4c;
-    margin-bottom:8px;
-}
-
-.card p{
-    color:#596562;
-}
-
-/* INFO */
 .info-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:14px;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
 }
 
-.info-box{
-    background:white;
-    padding:18px;
-    border-radius:14px;
-    box-shadow:0 5px 18px rgba(0,0,0,.05);
+.info-item{
+    background:#f3f8f6;
+    padding:15px;
+    border-radius:12px;
 }
 
-.info-box strong{
+.info-item strong{
     display:block;
-    color:#174c4c;
+    color:#176b5b;
     margin-bottom:3px;
-    font-size:14px;
 }
 
-/* GALLERY */
 .gallery{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:15px;
 }
 
-.gallery-item{
-    height:220px;
-    border-radius:16px;
-    background:#dce9e5;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#70817c;
-    overflow:hidden;
-}
-
-.gallery-item img{
+.gallery img{
     width:100%;
-    height:100%;
+    height:280px;
     object-fit:cover;
+    border-radius:16px;
+    transition:.3s;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
 }
 
-/* CONTACT */
+.gallery img:hover{
+    transform:scale(1.02);
+}
+
 .contact-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:14px;
+    gap:15px;
 }
 
-.contact-item{
-    background:white;
+.contact-box{
+    background:#f3f8f6;
     padding:20px;
     border-radius:15px;
-    box-shadow:0 5px 18px rgba(0,0,0,.05);
 }
 
-.contact-item strong{
-    color:#174c4c;
+.contact-box strong{
+    display:block;
+    color:#176b5b;
+    margin-bottom:5px;
 }
 
-.contact-item a{
-    color:#286f91;
+.contact-box a{
+    color:#24332f;
     text-decoration:none;
+    word-break:break-word;
 }
 
-/* FOOTER */
 footer{
-    margin-top:20px;
-    background:#174c4c;
+    margin-top:35px;
+    background:#123d35;
     color:white;
     text-align:center;
-    padding:25px 15px;
-    font-size:13px;
+    padding:22px;
+    font-size:14px;
 }
 
-/* MOBILE */
-@media(max-width:800px){
+@media(max-width:750px){
+
+    header h1{
+        font-size:25px;
+    }
+
+    nav{
+        gap:6px;
+    }
+
+    nav a{
+        padding:8px 12px;
+        font-size:13px;
+    }
 
     .hero{
-        margin:15px;
-        padding:25px 20px;
-    }
-
-    .hero-content{
+        margin:20px 15px;
+        padding:22px;
         flex-direction:column;
         text-align:center;
-        gap:22px;
+        gap:25px;
     }
 
-    .hero-photo{
-        width:210px;
-        height:245px;
+    .profile-photo{
+        width:220px;
+        height:280px;
     }
 
-    .hero h1{
-        font-size:30px;
+    .hero-content h2{
+        font-size:28px;
     }
 
     .info-grid,
+    .gallery,
     .contact-grid{
         grid-template-columns:1fr;
     }
 
-    .gallery{
-        grid-template-columns:1fr 1fr;
-    }
-
-    section{
-        padding:28px 18px;
-    }
-}
-
-@media(max-width:480px){
-
-    .nav a{
-        font-size:12px;
-        padding:7px 11px;
-    }
-
-    .gallery{
-        grid-template-columns:1fr;
-    }
-
-    .hero h1{
-        font-size:27px;
+    .gallery img{
+        height:330px;
     }
 }
 </style>
@@ -317,13 +262,12 @@ footer{
 
 <body>
 
-<!-- TOP -->
-<div class="topbar">
-    Marriage Profile
-</div>
+<header>
+    <h1>Marriage Profile</h1>
+    <p>Personal Profile</p>
+</header>
 
-<!-- NAVIGATION -->
-<nav class="nav">
+<nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#education">Education</a>
@@ -334,116 +278,89 @@ footer{
     <a href="#contact">Contact</a>
 </nav>
 
-<!-- HOME -->
-<div class="hero" id="home">
+<section id="home">
+    <div class="hero">
 
-    <div class="hero-content">
+        <img src="images/Photo 5.jpeg"
+             alt="Muhammad Aamer "
+             class="profile-photo">
 
-        <div class="hero-photo">
-            Profile Photo
-        </div>
+        <div class="hero-content">
+            <div class="small-title">Welcome to My Profile</div>
 
-        <div class="hero-text">
+            <h2>Muhammad Aamer<br></h2>
 
-            <div class="welcome">
-                Welcome to My Profile
-            </div>
-
-            <h1>
-                Muhammad Aamer<br>
-                Muhammad Hanif
-            </h1>
-
-            <p class="hero-description">
-                A glimpse into my personal, educational and professional journey.
+            <p>
+                A responsible, family-oriented and ambitious person
+                with a balanced and active lifestyle.
             </p>
 
-            <a href="#about" class="explore">
-                Explore My Profile
-            </a>
-
+            <a href="#about" class="btn">Explore My Profile</a>
         </div>
 
     </div>
+</section>
 
-</div>
+<div class="container">
 
-<!-- ABOUT -->
 <section id="about">
-
-    <div class="section-title">
-        <h2>About Me</h2>
-        <span>A little about myself</span>
-    </div>
+    <h2 class="section-title">About Me</h2>
 
     <div class="card">
         <p>
             I am a responsible and caring person who values my family
             and takes my responsibilities seriously.
         </p>
+
+        <br>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <strong>Full Name</strong>
+                Muhammad Aamer Muhammad Hanif
+            </div>
+
+            <div class="info-item">
+                <strong>Father's Name</strong>
+                Muhammad Hanif
+            </div>
+
+            <div class="info-item">
+                <strong>Grandfather's Name</strong>
+                Nabisab Shaikh
+            </div>
+
+            <div class="info-item">
+                <strong>Current City</strong>
+                Nanded, Maharashtra
+            </div>
+
+            <div class="info-item">
+                <strong>Height</strong>
+                5'5"
+            </div>
+
+            <div class="info-item">
+                <strong>Community / Biradari</strong>
+                Bagban
+            </div>
+        </div>
     </div>
-
-    <div class="info-grid">
-
-        <div class="info-box">
-            <strong>Full Name</strong>
-            Muhammad Aamer Muhammad Hanif
-        </div>
-
-        <div class="info-box">
-            <strong>Father's Name</strong>
-            Muhammad Hanif
-        </div>
-
-        <div class="info-box">
-            <strong>Grandfather's Name</strong>
-            Nabisab Shaikh
-        </div>
-
-        <div class="info-box">
-            <strong>Community / Biradari</strong>
-            Bagban
-        </div>
-
-        <div class="info-box">
-            <strong>Height</strong>
-            5'5"
-        </div>
-
-        <div class="info-box">
-            <strong>Current City</strong>
-            Nanded, Maharashtra
-        </div>
-
-    </div>
-
 </section>
 
-<!-- EDUCATION -->
 <section id="education">
-
-    <div class="section-title">
-        <h2>Education</h2>
-        <span>My educational background</span>
-    </div>
+    <h2 class="section-title">Education</h2>
 
     <div class="card">
-        <h3>B.Tech</h3>
         <p>
             I completed my B.Tech, which provided me with a strong
             technical and professional foundation.
         </p>
     </div>
-
 </section>
 
-<!-- CAREER -->
 <section id="career">
-
-    <div class="section-title">
-        <h2>Career</h2>
-        <span>My professional journey</span>
-    </div>
+    <h2 class="section-title">Career</h2>
 
     <div class="card">
         <p>
@@ -452,16 +369,10 @@ footer{
             entrepreneurship and currently manage my own business.
         </p>
     </div>
-
 </section>
 
-<!-- FAMILY -->
 <section id="family">
-
-    <div class="section-title">
-        <h2>Family</h2>
-        <span>About my family</span>
-    </div>
+    <h2 class="section-title">Family</h2>
 
     <div class="card">
         <p>
@@ -471,86 +382,85 @@ footer{
             agricultural land and property.
         </p>
     </div>
-
 </section>
 
-<!-- HOBBIES -->
 <section id="hobbies">
-
-    <div class="section-title">
-        <h2>Personality & Interests</h2>
-        <span>My lifestyle and interests</span>
-    </div>
+    <h2 class="section-title">Hobbies & Lifestyle</h2>
 
     <div class="card">
-        <h3>🌿 Lifestyle</h3>
         <p>
-            I maintain a fit and healthy lifestyle and value a balanced
-            and disciplined way of living. I belong to the Muslim faith
-            and follow the beliefs of Ahle Sunnat Wal Jamaat.
+            I enjoy playing cricket and maintain an active and healthy
+            lifestyle. I value a balanced and disciplined way of living.
         </p>
     </div>
-
-    <div class="card">
-        <h3>🏏 Hobbies & Interests</h3>
-        <p>
-            I enjoy playing cricket and maintain an active and healthy lifestyle.
-        </p>
-    </div>
-
 </section>
 
-<!-- PHOTOS -->
+<section>
+    <h2 class="section-title">Religion</h2>
+
+    <div class="card">
+        <p>
+            I belong to the Muslim faith and follow the beliefs of
+            Ahle Sunnat Wal Jamaat.
+        </p>
+    </div>
+</section>
+
 <section id="photos">
+    <h2 class="section-title">Photos</h2>
 
-    <div class="section-title">
-        <h2>Photos</h2>
-        <span>A glimpse into my life</span>
+    <div class="card">
+        <div class="gallery">
+
+            <img src="images/Photo 2.jpeg" alt="Aamer Photo 2">
+
+            <img src="images/Photo 3.jpeg" alt="Aamer Photo 3">
+
+            <img src="images/Photo 4.jpeg" alt="Aamer Photo 4">
+
+            <img src="images/Photo.jpeg" alt="Aamer Photo">
+
+            <img src="images/Photo 6.jpeg" alt="Aamer Photo 6">
+
+        </div>
     </div>
-
-    <div class="gallery">
-
-        <div class="gallery-item">Photo 1</div>
-        <div class="gallery-item">Photo 2</div>
-        <div class="gallery-item">Photo 3</div>
-
-    </div>
-
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
+    <h2 class="section-title">Contact</h2>
 
-    <div class="section-title">
-        <h2>Contact</h2>
-        <span>Get in touch</span>
+    <div class="card">
+
+        <div class="contact-grid">
+
+            <div class="contact-box">
+                <strong>Phone</strong>
+                <a href="tel:9673241200">
+                   9673241200
+                </a>
+            </div>
+
+            <div class="contact-box">
+                <strong>Email</strong>
+                <a href="mailto:aamerbagban78@gmail.com">
+                    aamerbagban78@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-box">
+                <strong>Location</strong>
+                Nanded, Maharashtra
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="contact-grid">
-
-        <div class="contact-item">
-            <strong>📱 Phone</strong><br>
-            <a href="tel:9673241200">9673241200</a>
-        </div>
-
-        <div class="contact-item">
-            <strong>📧 Email</strong><br>
-            <a href="mailto:aamerbagban78@gmail.com">
-                aamerbagban78@gmail.com
-            </a>
-        </div>
-
-        <div class="contact-item">
-            <strong>📍 Location</strong><br>
-            Maltekdi, Degloor Naka, Nanded, Maharashtra
-        </div>
-
-    </div>
-
 </section>
+
+</div>
 
 <footer>
-    © 2026 Muhammad Aamer Muhammad Hanif. All Rights Reserved.
+    Marriage Profile · Muhammad Aamer Muhammad Hanif
 </footer>
 
 </body>
