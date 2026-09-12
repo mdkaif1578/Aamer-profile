@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Marriage Profile | Muhammad Aamer </title>
+<title>Marriage Profile | Muhammad Aamer</title>
 
-<meta name="description" content="Personal marriage profile of Muhammad Aamer ">
+<meta name="description" content="Personal marriage profile of Muhammad Aamer">
 <meta name="robots" content="noindex, nofollow">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -18,49 +19,52 @@
 }
 
 body{
-
     font-family:Arial, sans-serif;
-    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81);
-    color:#f1f5f9;
+    background:#f3f7f5;
+    color:#263832;
     line-height:1.6;
-
 }
 
+/* HEADER */
+
 header{
-    background:linear-gradient(135deg,#123d35,#176b5b);
+    background:linear-gradient(135deg,#0f5c4d,#21806b);
     color:white;
-    padding:22px 7%;
+    padding:25px 7%;
     text-align:center;
 }
 
 header h1{
-    font-size:30px;
+    font-size:32px;
     letter-spacing:.5px;
 }
 
 header p{
-    opacity:.85;
+    opacity:.9;
     margin-top:4px;
+    font-size:16px;
 }
+
+/* NAVIGATION */
 
 nav{
     position:sticky;
     top:0;
     z-index:1000;
-    background:white;
-    padding:12px 5%;
+    background:#ffffff;
+    padding:13px 5%;
     display:flex;
     justify-content:center;
     gap:10px;
     flex-wrap:wrap;
-    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
 }
 
 nav a{
     text-decoration:none;
     color:#176b5b;
-    background:#eef6f3;
-    padding:9px 16px;
+    background:#edf6f2;
+    padding:9px 17px;
     border-radius:25px;
     font-size:14px;
     font-weight:bold;
@@ -70,27 +74,36 @@ nav a{
 nav a:hover{
     background:#176b5b;
     color:white;
+    transform:translateY(-2px);
 }
+
+/* HERO */
 
 .hero{
     max-width:1100px;
-    margin:35px auto;
-    padding:35px;
-    background:rgba(255,255,255,0.10);
-    
-    border-radius:24px;
+    margin:32px auto;
+    padding:38px;
+    background:#ffffff;
+    border-radius:28px;
     display:flex;
     align-items:center;
-    gap:45px;
-    box-shadow:0 8px 30px rgba(0,0,0,.08);
+    gap:50px;
+    box-shadow:0 10px 35px rgba(28,72,60,.10);
+    border:1px solid #e3eee9;
 }
 
-.profile-photo{
-    width:280px;
-    height:340px;
+/* PROFILE PHOTO */
+
+.pprofile-photo{
+    width:270px;
+    height:350px;
     object-fit:cover;
-    border-radius:20px;
-    box-shadow:0 8px 25px rgba(0,0,0,.15);
+    object-position:center;
+    border-radius:24px;
+    border:7px solid #edf6f2;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+    display:block;
+    flex-shrink:0;
 }
 
 .hero-content{
@@ -98,20 +111,24 @@ nav a:hover{
 }
 
 .hero-content .small-title{
-    color:#176b5b;
+    color:#18806b;
     font-weight:bold;
+    font-size:18px;
     margin-bottom:8px;
 }
 
 .hero-content h2{
-    font-size:38px;
+    color:#213c35;
+    font-size:40px;
     line-height:1.2;
     margin-bottom:15px;
 }
 
 .hero-content p{
-    color:#66736f;
-    margin-bottom:22px;
+    color:#61716c;
+    font-size:17px;
+    margin-bottom:24px;
+    max-width:600px;
 }
 
 .btn{
@@ -119,72 +136,98 @@ nav a:hover{
     text-decoration:none;
     background:#176b5b;
     color:white;
-    padding:12px 22px;
-    border-radius:25px;
+    padding:13px 25px;
+    border-radius:28px;
     font-weight:bold;
+    transition:.3s;
+    box-shadow:0 6px 15px rgba(23,107,91,.20);
 }
+
+.btn:hover{
+    background:#0f584b;
+    transform:translateY(-2px);
+}
+
+/* CONTAINER */
 
 .container{
     max-width:1050px;
     margin:auto;
-    padding:15px 20px;
+    padding:10px 20px;
 }
 
 section{
-    margin:25px 0;
-    scroll-margin-top:80px;
+    margin:30px 0;
+    scroll-margin-top:85px;
 }
 
 .section-title{
-    font-size:26px;
+    font-size:28px;
     margin-bottom:15px;
     color:#176b5b;
 }
 
+/* CARDS */
+
 .card{
-    
-    background:rgba(255,255,255,0.10);
-    padding:25px;
-    border-radius:18px;
-    box-shadow:0 5px 20px rgba(0,0,0,.06);
+    background:#ffffff;
+    padding:27px;
+    border-radius:20px;
+    box-shadow:0 7px 25px rgba(28,72,60,.08);
+    border:1px solid #e3eee9;
+    color:#354740;
 }
+
+.card p{
+    font-size:16px;
+}
+
+/* INFORMATION */
 
 .info-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:12px;
+    gap:14px;
 }
 
 .info-item{
-    background:rgba(255,255,255,0.08);
-    padding:15px;
-    border-radius:12px;
+    background:#f4f8f6;
+    padding:16px;
+    border-radius:14px;
+    border:1px solid #e2eee9;
+    color:#34453f;
 }
 
 .info-item strong{
     display:block;
     color:#176b5b;
-    margin-bottom:3px;
+    margin-bottom:4px;
+    font-size:14px;
 }
+
+/* GALLERY */
 
 .gallery{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:15px;
+    gap:16px;
 }
 
 .gallery img{
     width:100%;
     height:280px;
     object-fit:cover;
-    border-radius:16px;
+    border-radius:18px;
     transition:.3s;
-    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    box-shadow:0 6px 18px rgba(0,0,0,.10);
+    border:4px solid #f1f6f4;
 }
 
 .gallery img:hover{
-    transform:scale(1.02);
+    transform:scale(1.025);
 }
+
+/* CONTACT */
 
 .contact-grid{
     display:grid;
@@ -193,50 +236,69 @@ section{
 }
 
 .contact-box{
-    background:rgba(255,255,255,0.08);
-    padding:20px;
-    border-radius:15px;
+    background:#f4f8f6;
+    padding:21px;
+    border-radius:16px;
+    border:1px solid #e2eee9;
 }
 
 .contact-box strong{
     display:block;
     color:#176b5b;
-    margin-bottom:5px;
+    margin-bottom:6px;
+    font-size:16px;
 }
 
 .contact-box a{
-    color:#24332f;
+    color:#30413b;
     text-decoration:none;
     word-break:break-word;
 }
 
+.contact-box a:hover{
+    color:#176b5b;
+}
+
+/* FOOTER */
+
 footer{
-    margin-top:35px;
-    background:#123d35;
+    margin-top:40px;
+    background:#0f4f43;
     color:white;
     text-align:center;
-    padding:22px;
+    padding:24px;
     font-size:14px;
 }
 
+/* MOBILE */
+
 @media(max-width:750px){
 
+    header{
+        padding:22px 15px;
+    }
+
     header h1{
-        font-size:25px;
+        font-size:27px;
+    }
+
+    header p{
+        font-size:15px;
     }
 
     nav{
-        gap:6px;
+        gap:7px;
+        padding:11px 8px;
     }
 
     nav a{
-        padding:8px 12px;
+        padding:8px 13px;
         font-size:13px;
     }
 
     .hero{
         margin:20px 15px;
-        padding:22px;
+        padding:24px 20px;
         flex-direction:column;
         text-align:center;
         gap:25px;
@@ -244,23 +306,59 @@ footer{
 
     .pprofile-photo{
         width:220px;
-        height:280px;
+        height:290px;
+        border-radius:22px;
     }
 
     .hero-content h2{
-        font-size:28px;
+        font-size:30px;
     }
 
-    .info-grid,
-    .gallery,
-    .contact-grid{
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .small-title{
+        font-size:17px;
+    }
+
+    .container{
+        padding:5px 15px;
+    }
+
+    section{
+        margin:25px 0;
+    }
+
+    .section-title{
+        font-size:25px;
+    }
+
+    .card{
+        padding:21px;
+    }
+
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery{
         grid-template-columns:1fr;
     }
 
     .gallery img{
-        height:330px;
+        height:340px;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    footer{
+        padding:22px 15px;
     }
 }
+
 </style>
 </head>
 
@@ -282,35 +380,53 @@ footer{
     <a href="#contact">Contact</a>
 </nav>
 
+<!-- HOME -->
+
 <section id="home">
+
     <div class="hero">
 
         <img src="images/pprofile.jpeg"
-             alt="Muhammad Aamer "
+             alt="Muhammad Aamer"
              class="pprofile-photo">
 
         <div class="hero-content">
-            <div class="small-title">Welcome to My Profile</div>
 
-            <h2>Muhammad Aamer<br></h2>
+            <div class="small-title">
+                Welcome to My Profile
+            </div>
+
+            <h2>
+                Muhammad Aamer
+            </h2>
 
             <p>
                 A responsible, family-oriented and ambitious person
                 with a balanced and active lifestyle.
             </p>
 
-            <a href="#about" class="btn">Explore My Profile</a>
+            <a href="#about" class="btn">
+                Explore My Profile
+            </a>
+
         </div>
 
     </div>
+
 </section>
 
 <div class="container">
 
+<!-- ABOUT -->
+
 <section id="about">
-    <h2 class="section-title">About Me</h2>
+
+    <h2 class="section-title">
+        About Me
+    </h2>
 
     <div class="card">
+
         <p>
             I am a responsible and caring person who values my family
             and takes my responsibilities seriously.
@@ -319,6 +435,7 @@ footer{
         <br>
 
         <div class="info-grid">
+
             <div class="info-item">
                 <strong>Full Name</strong>
                 Muhammad Aamer Muhammad Hanif
@@ -348,121 +465,186 @@ footer{
                 <strong>Community / Biradari</strong>
                 Bagban
             </div>
+
         </div>
+
     </div>
+
 </section>
 
+<!-- EDUCATION -->
+
 <section id="education">
-    <h2 class="section-title">Education</h2>
+
+    <h2 class="section-title">
+        Education
+    </h2>
 
     <div class="card">
+
         <p>
             I completed my B.Tech, which provided me with a strong
             technical and professional foundation.
         </p>
+
     </div>
+
 </section>
 
+<!-- CAREER -->
+
 <section id="career">
-    <h2 class="section-title">Career</h2>
+
+    <h2 class="section-title">
+        Career
+    </h2>
 
     <div class="card">
+
         <p>
             After completing my B.Tech, I gained professional experience
             in the Food Technology field. I later transitioned into
             entrepreneurship and currently manage my own business.
         </p>
+
     </div>
+
 </section>
 
+<!-- FAMILY -->
+
 <section id="family">
-    <h2 class="section-title">Family</h2>
+
+    <h2 class="section-title">
+        Family
+    </h2>
 
     <div class="card">
+
         <p>
             I come from a close-knit family of five brothers, and I am
             the eldest. My father takes care of our agricultural land,
             while my mother is a homemaker. Our family also owns
             agricultural land and property.
         </p>
+
     </div>
+
 </section>
 
+<!-- HOBBIES -->
+
 <section id="hobbies">
-    <h2 class="section-title">Hobbies & Lifestyle</h2>
+
+    <h2 class="section-title">
+        Hobbies & Lifestyle
+    </h2>
 
     <div class="card">
+
         <p>
             I enjoy playing cricket and maintain an active and healthy
             lifestyle. I value a balanced and disciplined way of living.
         </p>
+
     </div>
+
 </section>
 
+<!-- RELIGION -->
+
 <section>
-    <h2 class="section-title">Religion</h2>
+
+    <h2 class="section-title">
+        Religion
+    </h2>
 
     <div class="card">
+
         <p>
             I belong to the Muslim faith and follow the beliefs of
             Ahle Sunnat Wal Jamaat.
         </p>
+
     </div>
+
 </section>
+
+<!-- PHOTOS -->
 
 <section id="photos">
-    <h2 class="section-title">Photos</h2>
+
+    <h2 class="section-title">
+        Photos
+    </h2>
 
     <div class="card">
+
         <div class="gallery">
 
-           <img src="images/photo1.jpeg" alt="Photo 1">
+            <img src="images/photo1.jpeg" alt="Photo 1">
 
-<img src="images/photo2.jpeg" alt="Photo 2">
+            <img src="images/photo2.jpeg" alt="Photo 2">
 
-<img src="images/photo3.jpeg" alt="Photo 3">
+            <img src="images/photo3.jpeg" alt="Photo 3">
 
-<img src="images/photo4.jpeg" alt="Photo 4">
+            <img src="images/photo4.jpeg" alt="Photo 4">
 
-<img src="images/profile.jpeg" alt="Photo 5">
+            <img src="images/profile.jpeg" alt="Photo 5">
 
-<img src="images/photo6.jpeg" alt="Photo 6">
+            <img src="images/photo6.jpeg" alt="Photo 6">
 
         </div>
+
     </div>
+
 </section>
 
+<!-- CONTACT -->
+
 <section id="contact">
-    <h2 class="section-title">Contact</h2>
+
+    <h2 class="section-title">
+        Contact
+    </h2>
 
     <div class="card">
 
         <div class="contact-grid">
 
             <div class="contact-box">
+
                 <strong>Phone</strong>
+
                 <a href="tel:9673241200">
-                   9673241200
+                    9673241200
                 </a>
+
             </div>
 
             <div class="contact-box">
+
                 <strong>Email</strong>
+
                 <a href="mailto:aamerbagban78@gmail.com">
                     aamerbagban78@gmail.com
                 </a>
+
             </div>
 
             <div class="contact-box">
+
                 <strong>Location</strong>
-              Maltekdi Road Degloor Naka Nanded,
+
+                Maltekdi Road, Degloor Naka,
                 Nanded, Maharashtra
-                
+
             </div>
 
         </div>
 
     </div>
+
 </section>
 
 </div>
